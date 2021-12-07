@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body onkeyup="handleKey(event)" onload="initGame()">
+    <h2>Move those Crates!</h2>
+    <button class="undo button" onclick="undo()">Undo</button>
+    <div class="score">Score <span class="counter">100</span></div>
+    <div class="board-container"></div>
+    <div class="restart">
+      <span class="modal"></span>
+      <button class="button" onclick="initGame()">Restart</button>
+    </div>
+    <table>
+      <tbody class="board"></tbody>
+    </table>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
